@@ -1,0 +1,110 @@
+<!-- Using any language or framework, we ask that you design and build an article or blog post on which others can submit comments.  -->
+<!-- Your code should touch on both the front end and the back end. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colombia.svg/255px-Flag_of_Colombia.svg.png">
+    <link href="blog.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="blogHeader">
+      <div class="container">
+        <nav class="nav">
+          <a class="nav-link active" href="">Home</a>
+
+        </nav>
+      </div>
+    </div>
+
+      <div class="container">
+        <h1 class="blog-title">Colombia is conducting widescale illegal surveillance</h1>
+      
+	  </div>
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+		  <hr>
+            <p class="author">October 6, 2017 by <a href="https://www.github.com/priyankakogta">Priyanka Kogta</a></p>
+
+			<!-- <strong> </strong> means bold.  -->
+			<!-- <em> </em> means italic. -->
+		   <hr> <!-- Creates divider (break) --> 
+            <p>
+			Want to know why it's important to have <a href="https://www.engadget.com/2015/06/01/us-patriot-act-vote-fails/">checks on mass surveillance</a> programs? Colombia should serve as a good example. <em>Privacy International</em> reports that the country not only collects bulk internet and phone data on a grand scale, but violates the law in the process -- it's supposed to require judicial approval for any surveillance, but regularly ignores that oversight. Colombian agencies have also relied on controversial tools like IMSI catchers (which scoop up nearby cellphone data) and Hacking Team's spyware, and they've sought to expand their powers rather than rein things in.
+<p>
+It's no secret that Colombia has a history of surveillance, fueled in no small part by its decades-long battles with rebels and drug cartels. And unfortunately, the pressure to keep an eye on communications isn't likely to drop anytime soon. A Venezuelan immigrant crackdown has forced many Colombia-born residents back to their homeland, increasing tensions between the two countries. It may take a long while before the political climate is truly conducive to surveillance reform. </p>
+            
+			
+          </div>
+
+        </div>
+
+        <div class="col-sm-3 offset-sm-1 blog-sidebar">
+          <div class="sidebar-inset">
+            <h4>About</h4>
+			<!-- <img src="priyanka.jpg" alt="Photo" style="width:32px; height:32px"> -->
+            <p>Priyanka Kogta is a senior studying Computer Science at Virginia Tech.</p>
+          </div>
+          <!-- <div class="sidebar-module"> -->
+            <!-- <h4>Archives</h4> -->
+            <!-- <ol class="list-unstyled"> -->
+              <!-- <li> -->
+		<!-- <a href="https://www.engadget.com/2016/04/01/andres-sepulveda-mexico-election-hack/"> Hacker claims he helped swing Mexican election </a> -->
+	<!-- </li> -->
+	<!-- <li> -->
+		<!-- <a href="https://www.engadget.com/2015/08/31/colombia-mass-surveillance/"> Colombia is conducting widescale illegal surveillance </a> -->
+	<!-- </li> -->
+	<!-- <li> -->
+		<!-- <a href="https://www.engadget.com/2015/01/24/recommended-reading-1-24-15/"> Recommended Reading: The most advanced coffee lab in the world </a> -->
+	<!-- </li> -->
+            <!-- </ol> -->
+          <!-- </div> -->
+          <!-- <div class="sidebar-author"> -->
+            <!-- <h4>Links about the Author</h4> -->
+            <!-- <ol class="list-unstyled"> -->
+              <!-- <li><a href="https://www.github.com/priyankakogta">GitHub</a></li> -->
+              <!-- <li><a href="https://www.linkedin.com/in/priyankakogta">LinkedIn</a></li> -->
+            <!-- </ol> -->
+          <!-- </div> -->
+        </div>
+
+      </div>
+
+    </div>
+</body>
+    <footer class="blog-footer">
+      <div class="comment">
+			<form>
+				<textarea id="words" rows="5" cols="97" placeholder="Enter a comment..."></textarea>
+				<!-- The row and column signifies the length and width of the comment box.  -->
+
+				<input type="button" onclick="getwords()" value="Enter" /> <br>
+					<p id="comment"></p>
+					<div id='time'></div>
+
+				</form>
+			</div>
+				<script type="text/javascript">
+function getwords() {
+	text = words.value;
+	var date = new Date();
+	var n = date.toDateString();
+	var time = date.toLocaleTimeString();
+
+  document.getElementById("comment").innerHTML += '<p>Comment posted at '+time+ ': ' +text;
+  document.getElementById("words").value = "";
+}
+
+				</script>
+    </footer>
+  <!-- </body> -->
+</html>
